@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skolass</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero-banner">
+        <div class="hero-banner__title" aria-hidden="true">KCAL CALCULATOR</div>
+        <img class="hero-banner__image" src="Food.png"/>
+        <h1 class="hero-banner__title hero-banner__stroked-title">KCAL CALCULATOR</h1>
+      </div>
+      
+      <div class="content">
+        <div class="addbox">
+
+	<form>
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender" class="initt1">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+		</select><br>
+
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age" class="initt1" required><br>
+
+		<label for="height">Height (cm):</label>
+		<input type="number" id="height" name="height" class="initt1" required><br>
+
+		<label for="weight">Weight (kg):</label>
+		<input type="number" id="weight" name="weight" class="initt1" required><br>
+
+		<label for="activity-level">Activity Level:</label>
+		<select id="activity-level" name="activity-level" class="initt1">
+			<option value="sedentary">Sedentary</option>
+			<option value="lightly-active">Lightly Active</option>
+			<option value="moderately-active">Moderately Active</option>
+			<option value="very-active">Very Active</option>
+			<option value="extra-active">Extra Active</option>
+		</select><br>
+
+		<input type="submit" value="Calculate" class="initt1">
+	</form>
+
+	<p>Calories needed per day: <span id="calories"></span></p>
+        </div>
+          <div class="addbox">
+            <input placeholder="Food Name" class="initt" id="food" type="text">
+            <input placeholder="Ammount in g" class="initt" id="ammount" type="number">
+            <button onclick="add()">Add</button>
+            <table class="grow">
+              <tr>
+                <td class="tds">Kcal</td>
+                <td class="tds">Fat</td>
+              </tr>
+              <tr>
+                <th><p id="onekcall"></p></th>
+                <th><p id="onefat"></p> </th>
+              </tr>
+            </table>
+            <table id="table">
+              <tr>
+                <td class="tds">Food</td>
+                <td class="tds">Calories</td>
+                <td class="tds">Fat</td>
+                <td class="tds">Ammount</td>
+              </tr>
+            </table>
+            <table class="grow">
+              <tr>
+                <td class="tds"> Total Kcal</td>
+                <td class="tds">Total Fat</td>
+              </tr>
+              <tr>
+                <th><p id="kcall"></p></th>
+                <th><p id="fat"></p> </th>
+              </tr>
+              </table>
+          </div>
+      <script src="script.js"></script>
+</body>
+</html>
