@@ -1,0 +1,183 @@
++=+=+=+=+=++++++PY+=+=+=++++++++++++=+=
+if x > 10:
+    print("x is greater than 10")
+
+
+for loop: 
+for i in range(5):
+    print(i)
+
+
+while loop: 
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+
+
+def statement: 
+def greet(name):
+    print("Hello, " + name + "!")
+
+
+import statement:
+import math
+print(math.sqrt(25))
+
+
++=+=+=+=+=+=+SQL+=+=+=+=+=+=
+
+
+SELECT: This command is used to retrieve data from a database. It allows you to specify the columns you want to retrieve and the table(s) from which you want to retrieve the data. For example:
+SELECT column1, column2 FROM table_name;
+
+
+INSERT INTO: This command is used to insert new rows of data into a table. It allows you to specify the table name and the values to be inserted into each column. For example:
+INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+
+
+UPDATE: This command is used to modify existing data in a table. It allows you to specify the table name, the column(s) to be updated, and the new values for those columns. You can also use the WHERE clause to update specific rows based on certain conditions. For example:
+UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;
+
+
+
+DELETE: This command is used to delete rows from a table. It allows you to specify the table name and the condition that determines which rows to delete. If no condition is specified, it deletes all rows from the table. For example:
+DELETE FROM table_name WHERE condition;
+
+
+
+CREATE TABLE: This command is used to create a new table in the database. It allows you to specify the table name and the columns along with their data types and constraints. For example:
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    ...
+);
+
+
+
+ALTER TABLE: This command is used to modify an existing table structure. It allows you to add, modify, or drop columns in an existing table. For example:
+ALTER TABLE table_name ADD column_name datatype;
+
+
+DROP TABLE: This command is used to delete an entire table from the database. It permanently removes the table and all its associated data. For example:
+DROP TABLE table_name;
+
+
+
+JOIN: This command is used to combine rows from two or more tables based on a related column between them. It allows you to retrieve data from multiple tables using a single query. There are different types of joins, such as INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN. For example:
+SELECT column1, column2 FROM table1 JOIN table2 ON table1.column = table2.column;
+
++=+=+=+=++++=JS+=+=+=+=+=+=
+console.log()
+console.log("Hello, World!");
+
+
+Variable declaration:
+var x = 5;      // Variables declared with 'var' are function-scoped.
+let y = "Hello"; // Variables declared with 'let' are block-scoped.
+const PI = 3.14; // Variables declared with 'const' are block-scoped and their value cannot be changed.
+
+
+
+if statement:
+if (x > 10) {
+  console.log("x is greater than 10");
+}
+
+
+
+for loop: 
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+while loop: 
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+
+function declaration: 
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+greet("John");
+
+
+
+document.getElementById():
+let element = document.getElementById("myElement");
+
+
+
+addEventListener():
+element.addEventListener("click", function() {
+  console.log("Button clicked!");
+});
+
+
+
+fetch(): This command is used to send HTTP requests to a server and retrieve data asynchronously. It is commonly used to fetch data from APIs or perform AJAX operations. For example:
+
+fetch("https://api.example.com/data")
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log(error));
+
+
+=+=+=+=+=+tkinter+=+=+=+=+=+=+
+import tkinter: This command is used to import the Tkinter module, which provides the necessary classes and methods for creating GUI applications.
+
+Tk(): This command is used to create the main window or the root window of the GUI application. It initializes the Tkinter interpreter and sets up the basic elements of the window.
+
+Label(): This command is used to create a static text label or a piece of text that is displayed in the GUI window. It is commonly used to provide information or instructions to the user.
+
+Button(): This command is used to create a button widget that the user can click on. Buttons are used to trigger actions or execute specific functions when clicked.
+
+Entry(): This command is used to create an input field or a text entry widget where the user can enter data or input. It allows the user to interactively provide input to the application.
+
+pack(): This command is used to organize and display the widgets in a block or stacked manner within the window. It is a simple geometry manager that automatically arranges the widgets based on their order of creation.
+
+grid(): This command is used to organize and display the widgets in a grid-like structure within the window. It allows you to specify the row and column positions of the widgets, providing more control over the layout.
+
+bind(): This command is used to bind a function or event handler to a widget. It associates a specific event (such as a button click or a keypress) with a function that should be executed when that event occurs.
+
+mainloop(): This command is used to start the Tkinter event loop, which listens for user input and events and updates the GUI accordingly. It keeps the GUI application running until the user closes the window.
+
+
+
+
+
+
+
++=+=+=++=+=+=+=+=+=+=+=+Html++=+=+=+=+=+++=+==+
+
+<html>: This command represents the root element of an HTML document. It encapsulates all the other elements in the document.
+
+<head>: This command represents the container for metadata and other non-visible elements of an HTML document, such as the document title, stylesheets, scripts, and character encoding.
+
+<title>: This command is used to specify the title of an HTML document. It is displayed as the title of the browser window or tab.
+
+<body>: This command represents the main content of an HTML document. It contains all the visible content, such as text, images, links, and other HTML elements.
+
+<h1>, <h2>, <h3>, ... <h6>: These commands are used to define headings of different levels in HTML. <h1> represents the highest level heading, while <h6> represents the lowest level heading.
+
+<p>: This command is used to define a paragraph of text in HTML. It represents a block of text that is separated from other content.
+
+<a>: This command is used to create a hyperlink or anchor element in HTML. It is commonly used to link to other web pages, files, or specific parts of a document.
+
+<img>: This command is used to embed an image in an HTML document. It specifies the source (URL) of the image file and other attributes like width, height, and alternative text.
+
+<ul> and <li>: These commands are used to create an unordered list in HTML. <ul> represents the container for the list, and <li> represents each item in the list.
+
+<ol> and <li>: These commands are used to create an ordered list in HTML. <ol> represents the container for the list, and <li> represents each item in the list.
+
+<div>: This command is used to define a division or a container element in HTML. It is commonly used to group and style other elements or sections of a webpage.
+
+<span>: This command is used to define an inline container in HTML. It is often used to group and style specific parts of text or other inline elements.
+
+<table>, <tr>, <th>, and <td>: These commands are used to create a table structure in HTML. <table> represents the entire table, <tr> represents a table row, <th> represents a table header cell, and <td> represents a table data cell.
+
+<form>, <input>, and <button>: These commands are used to create HTML forms for user input and interaction. <form> represents the form container, <input> represents various types of input fields (text, checkbox, radio, etc.), and <button> represents a button for form submission.
